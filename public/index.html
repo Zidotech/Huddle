@@ -12,7 +12,9 @@
     <nav class="mx-auto p-10">
       <!-- flex container -->
 
-      <div class="container flex items-center justify-between">
+      <div
+        class="container flex md:flex-row flex-col md:gap-0 gap-7 items-center justify-between"
+      >
         <!-- logo container -->
         <div class="pt-2">
           <img src="../images/logo.svg" alt="" />
@@ -33,7 +35,7 @@
       <div class="container flex flex-col mx-auto items-center">
         <!-- top item -->
         <div class="flex flex-col items-center gap-5">
-          <h2 class="text-5xl font-bold">
+          <h2 class="text-5xl font-bold md:p-0 p-10 text-center">
             Build The Community Your Fans Will Love
           </h2>
           <p class="w-2/4 text-center">
@@ -87,10 +89,10 @@
     <section class="container mt-36 mx-auto">
       <!-- flex container -->
       <div
-        class="container flex flex-col md:flex-row items-center md:justify-around"
+        class="container flex flex-col md:flex-row items-center md:justify-around md:gap-0 gap-10"
       >
         <!-- left item -->
-        <div class="w-1/2 text-left">
+        <div class="w-1/2 md:text-left text-center">
           <h3 class="font-bold text-3xl pb-2">Grow Together</h3>
           <p class="max-w-md">
             Generate meaningful discussions with your audience and build a
@@ -114,7 +116,7 @@
     <section class="container mt-36 mx-auto">
       <!-- flex container -->
       <div
-        class="container flex flex-col md:flex-row items-center md:justify-around"
+        class="container flex flex-col md:flex-row items-center md:justify-around md:gap-0 gap-10"
       >
         <!-- left item -->
         <div class="w-1/3">
@@ -126,7 +128,7 @@
         </div>
 
         <!-- right item -->
-        <div class="w-1/2 text-left">
+        <div class="w-1/2 md:text-left text-center">
           <h3 class="font-bold text-3xl pb-2">Flowing Conversations</h3>
           <p class="max-w-lg">
             You wouldn't paginate a conversation in real life, so why do it
@@ -141,10 +143,10 @@
     <section class="container mt-36 mx-auto">
       <!-- flex container -->
       <div
-        class="container flex flex-col md:flex-row items-center md:justify-around"
+        class="container flex flex-col md:flex-row items-center md:justify-around md:gap-0 gap-10"
       >
         <!-- left item -->
-        <div class="w-1/2 text-left">
+        <div class="w-1/2 md:text-left text-center">
           <h3 class="font-bold text-3xl pb-2">Your Users</h3>
           <p class="max-w-md">
             It takes no time at all to integrate Huddle with your app's
@@ -169,11 +171,50 @@
       <!-- flex container -->
       <div class="flex flex-col items-center justify-center gap-7">
         <!-- top item -->
-        <h3 class="text-3xl font-bold">Ready To Build Your Community?</h3>
+        <h3 class="text-3xl font-bold md:p-0 p-9 text-center">
+          Ready To Build Your Community?
+        </h3>
         <button class="bg-Pink text-white rounded-full w-64 p-4 text-xl">
           Get Started For Free
         </button>
       </div>
     </section>
+
+    <footer class="mt-20 h-auto w-screen bg-neutral-900 text-white md:h-64 p-9">
+      <!-- Flex container -->
+      <div class="flex flex-col md:flex-row justify-around">
+        <!-- left item -->
+        <div
+          class="md:w-1/3 w-auto md:text-left flex flex-col gap-3 text-center"
+        >
+          <h2 class="font-bold text-4xl">Huddle</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <span> Phone: +1-543-123-4567</span>
+          <span> example@huddle.com</span>
+        </div>
+
+        <!-- Right item -->
+        <div
+          class="md:w-1/3 w-auto md:text-left text-center mt-9 md:mt-0 flex flex-col gap-4"
+        >
+          <h2 class="font-semibold text-2xl">Newsletter</h2>
+          <p>
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+
+          <!-- inupt item-->
+          <div class="flex gap-5">
+            <input type="text" class="w-60 h-10 rounded-lg" />
+            <button class="bg-Pink w-40 rounded-lg font-sans tracking-wider">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
